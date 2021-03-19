@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/svb_dynamic_nft_website/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/svb_dynamic_nft_website/static/js/main.ba9e51a5.chunk.js",
+    "main.js.map": "/svb_dynamic_nft_website/static/js/main.ba9e51a5.chunk.js.map",
+    "runtime-main.js": "/svb_dynamic_nft_website/static/js/runtime-main.cd127d73.js",
+    "runtime-main.js.map": "/svb_dynamic_nft_website/static/js/runtime-main.cd127d73.js.map",
+    "static/js/2.9b745310.chunk.js": "/svb_dynamic_nft_website/static/js/2.9b745310.chunk.js",
+    "static/js/2.9b745310.chunk.js.map": "/svb_dynamic_nft_website/static/js/2.9b745310.chunk.js.map",
+    "static/js/3.1e8fbdf8.chunk.js": "/svb_dynamic_nft_website/static/js/3.1e8fbdf8.chunk.js",
+    "static/js/3.1e8fbdf8.chunk.js.map": "/svb_dynamic_nft_website/static/js/3.1e8fbdf8.chunk.js.map",
+    "index.html": "/svb_dynamic_nft_website/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/svb_dynamic_nft_website/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.9b745310.chunk.js.LICENSE.txt": "/svb_dynamic_nft_website/static/js/2.9b745310.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/svb_dynamic_nft_website/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cd127d73.js",
+    "static/js/2.9b745310.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.ba9e51a5.chunk.js"
+  ]
+}
