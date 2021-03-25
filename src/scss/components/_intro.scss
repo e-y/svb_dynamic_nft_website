@@ -1,0 +1,28 @@
+.intros {
+    width: 100%;
+    margin: auto;
+}
+
+.intro {
+    display: flex;
+    height: 350px;
+    color: white;
+}
+
+.intro__box {
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__title {
+    font-size: 36px;
+    font-family: 'Overpass';
+    margin-top: .5em;
+}
+
+.intro__image {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}

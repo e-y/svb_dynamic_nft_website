@@ -1,0 +1,32 @@
+.blog-post {
+    width: 80%;
+    margin: 4em auto;
+    background-color: white;
+    min-height: 80%;
+    border-radius: 16px;
+}
+
+.blog-post__container {
+    padding: 0 2em 2em;
+}
+
+.blog-post__title {
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+.blog-post__subheadline {
+    margin-top: 0.5em;
+}
+
+.blog-post__text {
+    margin-top: 2em;
+}
+
+.blog-post__image {
+    float: left;
+    margin: 2em;
+    max-height: 400px;
+    max-width: 500px;
+    object-fit: contain;
+}

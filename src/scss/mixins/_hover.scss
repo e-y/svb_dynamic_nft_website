@@ -1,0 +1,26 @@
+// Usage:
+//
+// a {
+// 	  text-decoration: none;
+//
+// 	  @include hover-active-focus {
+//     	  text-decoration: underline;
+// 	  }
+// }
+
+@mixin hover-active-focus {
+	&:hover,
+	&:active,
+	&:focus {
+		@content;
+	}
+}
+
+@mixin hover {
+	&:hover,
+	&:active,
+	&:focus {
+		@content;
+	}
+}
+
