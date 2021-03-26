@@ -1,9 +1,12 @@
-import './App.scss';
-import Typed from 'react-typed';
-import React from 'react';
-import Homepage from './pages/homepage';
-import Navigation from './components/navigation';
+import './App.scss'
+import Typed from 'react-typed'
+import React from 'react'
+import Homepage from './pages/homepage'
+import Navigation from './components/navigation'
 import Title from './components/title'
+import Intro from './components/intro'
+import SpecialCard from './components/specialCard'
+import Blog from './components/blog'
 
 function App() {
   return (
@@ -28,49 +31,11 @@ function App() {
       />
       <br/>
 
-
-<section className="intros">
-  <Title title='Intro' />
-  <div className="intro">
-    <img src={`${process.env.PUBLIC_URL}/img/pexels-photo-4785491.jpeg`} className="intro__image" alt="nft"></img>
-    <div className="intro__box">
-      <p className="intro__title">Stet clita kasd gubergren</p>
-      <p className="intro__text"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
-    </div>
-  </div>
-  <div className="intro">
-    <div className="intro__box">
-      <p className="intro__title">Stet clita kasd gubergren</p>
-      <p className="intro__text"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
-    </div>
-    <img src={`${process.env.PUBLIC_URL}/img/pexels-photo-4785491.jpeg`} className="intro__image" alt="nft"></img>
-  </div>
-</section>
+<Intro />
 <Title title='Card-Collection' />
 <Title title='Check this interactive stuff out' />
 
-      {/* EXAMPLE: ANIMATED CARD (ADIDAS) */}
-      <div className="container">
-        <div className="card">
-            <div className="sneaker">
-                <div className="circle"></div>
-                <img src={`${process.env.PUBLIC_URL}/img/adidas.png`} alt="nft"></img>
-            </div>
-            <div className="info">
-                <h1 className="title">Adidas ZX</h1>
-                <h3>FUTURE-READY TRAINERS WITH WRAPPED BOOST FOR EXCEPTION COMFORT.</h3>
-                <div className="sizes">
-                    <button>39</button>
-                    <button>40</button>
-                    <button className="active">42</button>
-                    <button>44</button>
-                </div>
-                <div className="purchase">
-                    <button>Purchase</button>
-                </div>
-            </div>
-        </div>
-    </div>
+<SpecialCard />
 
     <div className="image-generation">
       <div className="image-generation__form">
@@ -85,79 +50,9 @@ function App() {
       </div>
       <button className="image-generation__submit button" data-function="js-generate-image">Generate Image</button>
     </div>
-    <h2 className="title">Read More in our blog posts</h2>
 
-    <div className="blog-teaser">
-      <div className="blog-teaser__post">
-        <img src={`${process.env.PUBLIC_URL}/img/pexels-photo-6078297.jpeg`} alt="nft" className="blog-teaser__post-image"></img>
-        <div className="blog-teaser__post-info">
-          <div className="blog-teaser__post-title">About Surinami</div>
-          <div className="blog-teaser__post-subheadline">Lorem ipsum dolor sit amet</div>
-          <div className="blog-teaser__post-teaser-container">
-            <div className="blog-teaser__post-teaser-text">
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            </div>
-          </div>
-          <button className="blog-teaser__post-readmore button" data-function="js-readmore">Read More</button>
-          <div className="blog-teaser__modal">
-            <div className="blog-post">
-              <img src="#" className="blog-post__image" alt=""></img>
-              <div className="blog-post__container">
-                <div className="blog-post__title"></div>
-                <div className="blog-post__subheadline"></div>
-                <div className="blog-post__text"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="blog-teaser__post">
-        <img src={`${process.env.PUBLIC_URL}/img/pexels-photo-6771671.jpeg`} alt="nft" className="blog-teaser__post-image"></img>
-        <div className="blog-teaser__post-info">
-          <div className="blog-teaser__post-title">More about NFT</div>
-          <div className="blog-teaser__post-subheadline">Lorem ipsum dolor sit amet</div>
-          <div className="blog-teaser__post-teaser-container">
-            <div className="blog-teaser__post-teaser-text">
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, consetetur sadipscing elitr
-            </div>
-          </div>
-          <button className="blog-teaser__post-readmore button" data-function="js-readmore">Read More</button>
-          <div className="blog-teaser__modal">
-            <div className="blog-post">
-              <img src="#" className="blog-post__image" alt=""></img>
-              <div className="blog-post__container">
-                <div className="blog-post__title"></div>
-                <div className="blog-post__subheadline"></div>
-                <div className="blog-post__text"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="blog-teaser__post">
-      <img src={`${process.env.PUBLIC_URL}/img/pexels-photo-6772076.jpeg`} alt="nft" className="blog-teaser__post-image"></img>
-        <div className="blog-teaser__post-info">
-          <div className="blog-teaser__post-title">At vero eos et accusam</div>
-          <div className="blog-teaser__post-subheadline">Lorem ipsum dolor sit amet</div>
-          <div className="blog-teaser__post-teaser-container">
-            <div className="blog-teaser__post-teaser-text">
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
-            </div>
-          </div>
-          <button className="blog-teaser__post-readmore button" data-function="js-readmore">Read More</button>
-          <div className="blog-teaser__modal">
-            <div className="blog-post">
-              <img src="#" className="blog-post__image" alt=""></img>
-              <div className="blog-post__container">
-                <div className="blog-post__title"></div>
-                <div className="blog-post__subheadline"></div>
-                <div className="blog-post__text"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Blog />
+
     <Title title='Team' />
     <div className="team">
       <div className="team__member">

@@ -6,6 +6,6 @@ import generateImage from './_generateImage';
 export default function Main() {
     hamburger();
     specialCard();
-    modal();
+    //modal();
     generateImage();
 }
