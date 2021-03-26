@@ -1,9 +1,16 @@
 import './App.scss';
 import Typed from 'react-typed';
+import React from 'react';
+import Homepage from './pages/homepage';
+import Navigation from './components/navigation';
+import Title from './components/title'
 
 function App() {
   return (
+
     <div className="App">
+      <Homepage/>
+      <Navigation/>
       <div className="top-navigation flex-layout flex-layout--space">
         <div className="navigation__hamburger">
           <div className="hamburger hamburger--3dx" data-function="js-hamburger">
@@ -15,46 +22,15 @@ function App() {
         <div className="button">Launch App</div>{/*Connect to Wallet*/}
       </div>
 
-      <header className="header" style={{
-          background: `url('${process.env.PUBLIC_URL}/img/pexels-photo-54567.jpeg')`,
-          backgroundSize: "cover",
-        }}>
-        <div className="header__logo-box">
-          <img src={`${process.env.PUBLIC_URL}/img/logo.png`} className="header__logo header__logo--svb" alt="surinami-logo"></img>
-          <span className="header__logo-text">meets</span>
-          <div className="nft-box">
-            <div className="nft-box__bracket-row"></div>
-            <p className="nft-box__title">Non-Fungible Tokens</p>
-            <div className="nft-box__bracket-row nft-box__bracket-row--bottom"></div>
-          </div>
-          {/* <img src={`${process.env.PUBLIC_URL}/img/link-logo.svg`} className="header__logo header__logo--link" alt="link-logo"></img> */}
-        </div>
-        <Typed
-          className="header__animation"
-          strings={[
-          'An example of NFT',
-          'An example of Collectible',
-          'An example of Hackathon Code']}
-          typeSpeed={40}
-          backSpeed={50}
-          loop >
-        </Typed>
-        <nav className="navigation">
-          <div className="navigation__item">What´s NFT?</div>
-          <div className="navigation__item">Roadmap</div>
-          <div className="navigation__item">More</div>
-        </nav>
-      </header>
-
       <Typed
           strings={['Lorem ipsum dolor sit amet']}
           typeSpeed={40}
       />
       <br/>
 
-<h2 className="title">Information</h2>
 
 <section className="intros">
+  <Title title='Intro' />
   <div className="intro">
     <img src={`${process.env.PUBLIC_URL}/img/pexels-photo-4785491.jpeg`} className="intro__image" alt="nft"></img>
     <div className="intro__box">
@@ -70,13 +46,8 @@ function App() {
     <img src={`${process.env.PUBLIC_URL}/img/pexels-photo-4785491.jpeg`} className="intro__image" alt="nft"></img>
   </div>
 </section>
-
-<h2 className="title">Card-Collection</h2>
-
-<h2 className="title">Roadmap</h2>
-
-
-  <h2 className="title">Check this interactive stuff out</h2>
+<Title title='Card-Collection' />
+<Title title='Check this interactive stuff out' />
 
       {/* EXAMPLE: ANIMATED CARD (ADIDAS) */}
       <div className="container">
@@ -187,8 +158,7 @@ function App() {
         </div>
       </div>
     </div>
-
-    <h2 className="title">Team</h2>
+    <Title title='Team' />
     <div className="team">
       <div className="team__member">
         <img src={`${process.env.PUBLIC_URL}/img/220px-Kermit_the_Frog.jpg`} alt="nft" className="team__memberimage"></img>
