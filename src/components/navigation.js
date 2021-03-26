@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Typed from 'react-typed';
+import TopNavigation from './top-navigation';
 
 class Navigation extends Component {
     componentDidMount() {
@@ -15,6 +16,7 @@ class Navigation extends Component {
             background: `url('${process.env.PUBLIC_URL}/img/pexels-photo-54567.jpeg')`,
             backgroundSize: "cover",
             }}>
+            <TopNavigation/>
             <div className="header__logo-box">
             <img src={`${process.env.PUBLIC_URL}/img/logo.png`} className="header__logo header__logo--svb" alt="surinami-logo"></img>
             <span className="header__logo-text">meets</span>

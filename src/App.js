@@ -1,7 +1,7 @@
 import './App.scss'
 import Typed from 'react-typed'
 import React from 'react'
-import Homepage from './pages/homepage'
+// import Homepage from './pages/homepage'
 import Navigation from './components/navigation'
 import Title from './components/title'
 import Intro from './components/intro'
@@ -12,19 +12,9 @@ function App() {
   return (
 
     <div className="App">
-      <Homepage/>
+      {/* <Homepage/> */}
       <Navigation/>
-      <div className="top-navigation flex-layout flex-layout--space">
-        <div className="navigation__hamburger">
-          <div className="hamburger hamburger--3dx" data-function="js-hamburger">
-            <div className="hamburger-box">
-              <div className="hamburger-inner"></div>
-            </div>
-          </div>
-        </div>
-        <div className="button">Launch App</div>{/*Connect to Wallet*/}
-      </div>
-
+      
       <Typed
           strings={['Lorem ipsum dolor sit amet']}
           typeSpeed={40}
