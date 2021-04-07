@@ -26,7 +26,7 @@
     font-size: 16px;
 
     @include hover() {
-        background-color: $color_sub;
+        background-color: $color_svb-green-darker;
         transform: scale(1.05);
     }
 }

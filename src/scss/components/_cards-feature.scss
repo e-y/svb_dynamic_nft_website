@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.cards-feature {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 2em;
+}
+
+.cards-feature__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    //   max-width: 1200px;
+}
+
+.cards-feature .cards-feature__card {
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.cards-feature .cards-feature__card .cards-feature__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: $color_svb-green;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 500ms linear, box-shadow 500ms linear, background 500ms linear;
+}
+
+.cards-feature .cards-feature__card:hover .cards-feature__box {
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, $color_svb-green-lightest, $color_svb-green-darker);
+}
+
+.cards-feature .cards-feature__card .cards-feature__box .cards-feature__content {
+    padding: 20px;
+    text-align: center;
+}
+
+.cards-feature .cards-feature__card .cards-feature__box .cards-feature__content h2 {
+    position: absolute;
+    top: 11px;
+    right: 30px;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.02);
+    transition: color 500ms linear;
+}
+
+.cards-feature .card:hover .cards-feature__box .cards-feature__content h2 {
+    color: rgba(0, 0, 0, 0.05);
+}
+
+.cards-feature .cards-feature__card .cards-feature__box .cards-feature__content h3 {
+    color: $color-yellow;
+    font-size: 1.8em;
+    font-family: 'Goldman', cursive;
+    margin-bottom: 1.5em;
+    z-index: 1;
+    transition: color 500ms linear;
+}
+
+.cards-feature .cards-feature__card .cards-feature__box .cards-feature__content p {
+    font-size: 1.25em;
+    font-weight: 300;
+    color: white;
+    z-index: 1;
+    transition: color 500ms linear;
+}
+
+.cards-feature .card:hover .cards-feature__box .cards-feature__content h3,
+.cards-feature .card:hover .cards-feature__box .cards-feature__content p {
+    color: #fff;
+}
+
+.cards-feature .cards-feature__card .cards-feature__box .cards-feature__content a {
+    position: relative;
+    display: none; //inline-block;
+    padding: 8px 20px;
+    background: $color_yellow;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cards-feature .card:hover .cards-feature__box .cards-feature__content a {
+    background: #ff568f;
+}
+
+@media only screen and (max-width: 1140px) {
+    .cards-feature {
+        flex-direction: column;
+    }
+}

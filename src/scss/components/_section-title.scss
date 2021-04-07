@@ -1,0 +1,57 @@
+.section-title {
+    color: white;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    width: 50%;
+    min-width: fit-content;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, calc( -50% + ( 28px + 4px )) );
+    transform: translate(-50%, -32px);
+    font-size: 2em;
+}
+
+.section-title__main {
+    background-color: $color_svb-green-lightest;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-size: 2.25em;
+    position: relative;
+    text-shadow: 2px 2px 1px $color_svb-green-darker, -2px -2px 1px $color_svb-green-darker;
+    width: calc( 100% + 80px + 20px );
+    min-width: 50%;
+}
+
+.section-title__main:before, .section-title__main:after {
+    content: ' ';
+    width: 40px;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: calc( 86px / 2 - 1px);
+}
+
+.section-title__main:before {
+    left: 2px;
+}
+
+.section-title__main:after {
+    right: 2px;
+}
+
+.section-title__subtitle {
+    background-color: $color_svb-green-darker;
+    font-size: 1.5rem;
+}
+
+.section-badge {
+    position: absolute;
+    z-index: 5;
+    font-size: 5em;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}

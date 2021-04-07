@@ -1,16 +1,18 @@
 .intros {
     width: 100%;
-    margin: auto;
 }
 
 .intro {
     display: flex;
     height: 350px;
-    color: white;
+}
+
+.intro--reverse {
+    flex-direction: row-reverse;
 }
 
 .intro__box {
-    margin-left: 3em;
+    margin: 1em 3em;
     display: flex;
     flex-direction: column;
 }
@@ -25,4 +27,10 @@
     width: 50%;
     height: auto;
     object-fit: cover;
+    z-index: 1;
+}
+
+.intro__text {
+    margin-top: 1em;
+    font-size: larger;
 }

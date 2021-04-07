@@ -1,0 +1,21 @@
+.image__world-map {
+    z-index: 1;
+    width: 36%;
+    opacity: .25;
+    border-radius: 100%;
+    filter: grayscale(.5);
+    height: auto;
+    transform: translate(-12.5%,-8%);
+}
+
+.image__soccer-ball {
+    /* z-index: 1; */
+    width: 36%;
+    opacity: .25;
+    border-radius: 100%;
+    filter: grayscale(0.5);
+    height: auto;
+    transform: translate(-8%, -8%);
+    position: absolute;
+    right: -15%;
+}

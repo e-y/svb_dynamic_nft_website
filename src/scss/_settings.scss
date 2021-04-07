@@ -1,10 +1,42 @@
 // Fonts:
 
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Overpass:ital,wght@0,100;0,200;0,400;0,800;1,700&family=Source+Serif+Pro:wght@300;600&display=swap');
+@import './icomoon/style';
 
-// Colors:
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Big+Shoulders+Stencil+Text&family=Goldman:wght@400;700&family=Overpass:ital,wght@0,100;0,200;0,400;0,800;1,700&family=Source+Serif+Pro:wght@300;600&display=swap');
+/* Included google web fonts:
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    font-family: 'Frijole', cursive;
+    font-family: 'Goldman', cursive;
+    font-family: 'Comfortaa', cursive;
+*/
 
-$color_main: #005f49;
-$color_sub: gray;
-$color_text: orange;
-$color_title: white;
+
+// Raw Colors:
+$color_gunmetal: #292F36;
+$color_jet: #363537;
+$color_space-cadet: #1B1F3B;
+$color_pewter-blue: #88A2AA;
+$color_castleton-green: #005F49;
+$color_granny-smith-apple: #ACECA1;
+$color_cream: #FFFACC;
+
+$color_yellow: #ebc71d;
+
+$color_svb-green-darkest: #37793c;
+$color_svb-green-darker: #11804d;
+$color_svb-green: #109d5a;
+$color_svb-green-lighter: #347639;
+$color_svb-green-lightest: #65e56c;
+$color_svb-red: #ac082a;
+$color_svb-red-darker: #830520;
+
+$color_text-darkest: black;
+$color_text-darker: $color_gunmetal;
+$color_text: $color_jet;
+$color_text-lighter: #E0DDCF;
+$color_text-lightest: white;
+
+$color_shadow: #bababa9e;
+
+// Radius
+$border-radius: 14px;

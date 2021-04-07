@@ -12,7 +12,6 @@
     color: inherit;
     border: 0;
     background-color: transparent;
-    height: 24px;
 
     @include hover() {
         opacity: .7;
@@ -58,7 +57,6 @@
 .hamburger-inner {
     top: 50%;
     display: block;
-    margin-top: -2px;
 
     &:after {
         bottom: -10px;

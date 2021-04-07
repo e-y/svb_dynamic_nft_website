@@ -1,0 +1,7 @@
+section:not([class^="faq"]) {
+    margin: auto;
+    padding-top: 8em;
+    position: relative;
+    outline: 4px solid $color_svb-green-lightest;
+    outline-offset: -14px;
+}

@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .special-card {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+  }
+  .special-card__container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .special-card__item {
+    transform-style: preserve-3d;
+    min-height: calc( 2592px / 4);
+    width: calc(1728px / 4);
+    border-radius: 30px;
+    padding: 12% 5rem 0rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    background-repeat: round;
+  }
+
+  .special-card__player {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .special-card__player img {
+    width: 19rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+  }
+  
+  .special-card__info h1 {
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+  }
+  .special-card__info h3 {
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+  }
+  .sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+  }
+  .sizes button {
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+  }
+  button.active {
+    background: #585858;
+    color: white;
+  }
+  .purchase {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+  }
+  .purchase button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #f54642;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+  }

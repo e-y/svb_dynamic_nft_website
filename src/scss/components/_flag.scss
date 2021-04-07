@@ -1,0 +1,46 @@
+.flag {
+    height: 185px;
+    background-position-y: 400px;
+    background-position-x: center;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.flag-colors {
+    background-color: #b30a2d;
+    height: 60%;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.flag-colors:before {
+    background-color: white;
+    content: " ";
+    height: 35%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+    width: 100%;
+}
+
+.flag-colors:after {
+    bottom: 0;
+    background-color: white;
+    content: " ";
+    height: 35%;
+    left: 0;
+    position: absolute;
+    transform: translateY(100%);
+    width: 100%;
+}
+
+.flag-image {
+    display: none;
+    position: absolute;
+    transform: rotate(90deg);
+}

@@ -1,21 +1,39 @@
+import './App.scss'
+import React from 'react'
+import Homepage from './pages/Homepage'
+import Infopage from './pages/Info'
+import Typed from 'react-typed'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 /* eslint-disable import/no-extraneous-dependencies */
+
+// React FullPage-JS
 import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
 
-const anchors = ["firstPage", "secondPage", "thirdPage"];
 
 function App() {
   return (
-    <ReactFullpage
-      anchors={anchors}
-      navigation
-      navigationTooltips={anchors}
-      sectionsColor={["#282c34", "#ff5f45", "#0798ec"]}
-      onLeave={(origin, destination, direction) => {
-        console.log("onLeave event", { origin, destination, direction });
-      }}
-    />
-  )
+    <Router>
+      <Switch>
+        <Route path="/about">
+          About
+          <Link to="/blog">Blog</Link>
+        </Route>
+        <Route path="/blog">
+          Blog
+        </Route>
+        <Route path="/contact">
+          Contact
+        </Route>
+        <Route path="/info">
+          <Infopage />
+        </Route>
+        <Route path="/">
+          <Homepage />
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;

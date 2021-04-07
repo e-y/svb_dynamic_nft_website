@@ -3,10 +3,10 @@ import Typed from 'react-typed'
 import React from 'react'
 // import Homepage from './pages/homepage'
 import Navigation from './components/navigation'
-import Title from './components/title'
+import SectionTitle from './components/title'
 import Intro from './components/intro'
 import SpecialCard from './components/specialCard'
-import Blog from './components/blog'
+import Blog from './components/blog/blog'
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
       <br/>
 
 <Intro />
-<Title title='Card-Collection' />
-<Title title='Check this interactive stuff out' />
+<SectionTitle title='Card-Collection' />
+<SectionTitle title='Check this interactive stuff out' />
 
 <SpecialCard />
 
@@ -43,7 +43,7 @@ function App() {
 
     <Blog />
 
-    <Title title='Team' />
+    <SectionTitle title='Team' />
     <div className="team">
       <div className="team__member">
         <img src={`${process.env.PUBLIC_URL}/img/220px-Kermit_the_Frog.jpg`} alt="nft" className="team__memberimage"></img>

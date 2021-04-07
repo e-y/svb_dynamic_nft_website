@@ -1,10 +1,21 @@
 .top-navigation {
+    align-items: center;
+    display: flex;
     position: absolute;
-    width: 100%;
     top: 0;
+    width: 100%;
     z-index: 1;
 }
 
 .top-navigation__hamburger {
     
+}
+
+.top-navigation__logo {
+    width: 52px;
+}
+
+.top-navigation__connectwallet {
+    position: absolute;
+    right: 0;
 }

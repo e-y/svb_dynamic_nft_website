@@ -1,0 +1,34 @@
+// Icomoon
+.icon-badge {
+    content: "\e904";
+}
+
+.icon-badge-inner,
+.icon-badge-outer,
+.icon-badge-shadow {
+    position: absolute;
+}
+
+// SVG-Version:
+.icon__badge {
+    width: 150px;
+    height: auto;
+    opacity: 1;
+    color: white;
+}
+
+.icon-svb-coat {
+    color: white;
+    opacity: .25;
+}
+
+.icon-info {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: 12.5%;
+    transform: translateX(-50%);
+    font-size: 4em;
+    color: white;
+    text-shadow: 0 3px 0px #ac082a;
+}
