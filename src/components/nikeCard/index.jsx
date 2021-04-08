@@ -112,7 +112,7 @@ export function NikeCard(props) {
         <TopContainer>
           <ShoesWrapper>
             <Shoes
-              style={{ x, y, rotateX, rotateY, rotate: "-25deg", z: 100000 }}
+              style={{ x, y, rotateX, rotateY, rotate: "0deg", z: 100000 }}
               drag
               dragElastic={0.12}
               whileTap={{ cursor: "grabbing" }}

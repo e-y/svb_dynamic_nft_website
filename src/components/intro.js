@@ -1,4 +1,3 @@
-import SectionTitle from './section-title'
 import IntroItem from './introItem'
 import SectionTop from './section-top'
 

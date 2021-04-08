@@ -1,7 +1,13 @@
-* + section {
+.react-parallax:not(:first), section:not([class^="faq"]) {
     margin-top: 2em;
 }
 
 * + .container {
     margin-top: 5em;
 }
+
+.react-parallax {
+    margin-top: 3em;
+    padding: 3em 0;
+}
+

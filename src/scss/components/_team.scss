@@ -2,28 +2,32 @@
     
 }
 
-.team_members {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+.team__members {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .team__member {
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
+    border-radius: 50%;
     overflow: hidden;
     height: 250px;
     background-color: white;
     position: relative;
     border: 2px solid black;
     margin: 1em;
+    width: 250px;
 }
 
 .team__memberinfo {
     position: absolute;
     bottom: 0;
-    width: 100%;
     text-align: center;
     background-color: white;
+}
+
+.team__memberimage {
+    width: 100%;
+    object-fit: contain;
 }
 
 .team__membername {

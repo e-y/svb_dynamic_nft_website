@@ -1,0 +1,36 @@
+.contact-form {
+
+}
+
+.contact-form__element {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em 2em;
+
+    input {
+        font-size: 1.5rem;
+        padding-left: 4px;
+    }
+
+    textarea {
+        font-size: 1.25rem;
+        padding-left: 4px;
+        padding-top: 4px;
+        margin-top: 1em;
+    }
+
+    a {
+        border: 2px solid white;
+        border-radius: 8px;
+        color: black;
+        font-family: 'Overpass';
+        font-size: 1.25em;
+        line-height: calc(185px/4.5);
+        text-align: center;
+        margin-top: .5em;
+        background-color: #ebc71d;
+        font-family: 'Goldman', cursive;
+        text-decoration: none;
+        height: calc(185px/4);
+    }
+}

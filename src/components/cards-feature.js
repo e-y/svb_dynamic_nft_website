@@ -1,9 +1,9 @@
-import SectionTitle from '../components/section-title'
+import SectionTop from '../components/section-top'
 
 const cardsFeature = () => {
     return (
-        <section className="cards-feature">
-            <SectionTitle title='Instructions' subtitle='What to do next?' />
+        <section className="section cards-feature">
+            <SectionTop title='Instructions' subtitle="What to do next?" badge={true} badge_title='NFT' />
             <div className="cards-feature__container">
                 <div className="cards-feature__card">
                     <div className="cards-feature__box">

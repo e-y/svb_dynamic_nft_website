@@ -1,5 +1,3 @@
-import Flag from '../components/flag'
-
 const TeamMember = ({name, position, image}) => {
     return (
         <div className="team__member">

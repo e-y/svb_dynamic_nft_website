@@ -5,7 +5,7 @@ const BadgeWrapper = ({badge_title, section}) => {
     return (
         <div className="badge-wrapper">
             <BadgeIcon badge_title={badge_title} section={section} wrapper={true} />
-            <Hexagon section={section} />
+            <Hexagon section={section} inner={true} />
         </div>
     )
 }
