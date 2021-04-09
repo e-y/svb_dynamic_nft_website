@@ -4,7 +4,7 @@ import Flag from '../components/flag'
 
 const team = () => {
     return (
-        <section className="team">
+        <section className="team" id="team">
             <Title title='Team' />
             <div className="team__members">
                 <Flag />

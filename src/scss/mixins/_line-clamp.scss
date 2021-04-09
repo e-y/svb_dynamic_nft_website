@@ -1,0 +1,52 @@
+@mixin line-clamp($line-clamp, $line-height) { // check if mixin is nested
+	max-height: rem($line-clamp * $line-height);
+	overflow: hidden;
+	position: relative;
+	text-overflow: ellipsis;
+
+	@if $line-clamp > 1 {
+		@supports (-webkit-line-clamp: $line-clamp) {
+			display: -webkit-box;
+			-webkit-line-clamp: $line-clamp;
+			-webkit-box-orient: vertical;
+		}
+		
+		@supports not (-webkit-line-clamp: $line-clamp) {
+			&:after {
+				background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 60%);
+				bottom: 0;
+				content: '';
+				height: rem($line-height);
+				position: absolute;
+				top: rem(($line-clamp - 1) * $line-height);
+				right: 0;
+				text-align: right;
+				width: 45%;
+			}
+		}
+	} @else {
+		white-space: nowrap;
+	}
+}
+
+@mixin reset-line-clamp() {
+	max-height: inherit;
+	overflow: inherit;
+	position: inherit;
+	text-overflow: inherit;
+	display: inherit;
+	-webkit-line-clamp: inherit;
+	-webkit-box-orient: inherit;
+
+	&:after {
+		background: inherit;
+		bottom: inherit;
+		content: inherit;
+		height: inherit;
+		position: inherit;
+		top: inherit;
+		right: inherit;
+		text-align: inherit;
+		width: inherit;
+	}
+}

@@ -8,7 +8,7 @@ import SpecialCard from '../components/specialCard'
 import CardsFeature from '../components/cards-feature'
 import Flag from '../components/flag'
 
-const homepage = () => {
+const Homepage = () => {
     const anchors = ["firstPage", "secondPage", "thirdPage"];
 
     return (
@@ -140,4 +140,4 @@ const homepage = () => {
     )
 }
 
-export default homepage
+export default Homepage

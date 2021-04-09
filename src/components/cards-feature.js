@@ -2,7 +2,7 @@ import SectionTop from '../components/section-top'
 
 const cardsFeature = () => {
     return (
-        <section className="section cards-feature">
+        <section className="section cards-feature" id="howto">
             <SectionTop title='Instructions' subtitle="What to do next?" badge={true} badge_title='NFT' />
             <div className="cards-feature__container">
                 <div className="cards-feature__card">

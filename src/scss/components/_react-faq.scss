@@ -14,7 +14,11 @@
     }
     
     .row-title {
-        margin-left: 2em;
+        margin-left: 4px;
+        
+        @include breakpoint(sm) {
+            margin-left: 2em;
+        }
     }
 
     .row-title-text {

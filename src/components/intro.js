@@ -3,7 +3,7 @@ import SectionTop from './section-top'
 
 const Intro = () => {
     return (
-        <section className="intros">
+        <section className="section intros" id="infos">
             {/* <SectionTitle title='Intro' subtitle='General Ideas' /> */}
             <SectionTop title='Intro' subtitle='General Ideas' badge={true} badge_title='NFT' />
             <IntroItem

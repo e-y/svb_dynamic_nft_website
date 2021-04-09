@@ -4,7 +4,14 @@
 
 .intro {
     display: flex;
-    height: 350px;
+
+    &:not(:nth-child(3)) {
+        padding-top: 2rem;
+    }
+
+    @include breakpoint(md) {
+        height: 350px;
+    }
 }
 
 .intro--reverse {
@@ -12,9 +19,13 @@
 }
 
 .intro__box {
-    margin: 1em 3em;
+    margin: 1em 1.25em;
     display: flex;
     flex-direction: column;
+
+    @include breakpoint(sm) {
+        margin: 1em 3em;
+    }
 }
 
 .intro__title {
@@ -24,10 +35,14 @@
 }
 
 .intro__image {
-    width: 50%;
+    width: 25%;
     height: auto;
     object-fit: cover;
     z-index: 1;
+
+    @include breakpoint(lg) {
+        width: 50%;
+    }
 }
 
 .intro__text {

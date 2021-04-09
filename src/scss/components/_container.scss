@@ -1,5 +1,13 @@
 .container {
-    max-width: 1092px;
+    
     margin: auto;
     background-color: white;
+
+    @include breakpoint(md) {
+        max-width: 740px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 1092px;
+    }
 }

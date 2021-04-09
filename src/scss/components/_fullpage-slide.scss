@@ -40,7 +40,26 @@
 .fullpage-slide__card {
     box-shadow: 0px 0px 20px 11px #00001442, 0px 20px 30px 11px #00001442;
     height: auto;
-    width: 22.5%;
+    width: 75%;
+
+    @include breakpoint(xs) {
+        width: auto;
+        max-height: 485px;
+        object-fit: contain;
+    }
+
+    @include breakpoint(md) {
+        max-height: 520px;
+    }
+
+    @include breakpoint(lg) {
+        max-height: unset;
+        width: 30%;
+    }
+
+    @include breakpoint(xl) {
+        width: 22.5%;
+    }
 }
 
 .fullpage-slide__coat {
@@ -72,7 +91,7 @@
     font-size: 6em;
     font-weight: bold;
     height: 100%;
-    padding-top: 1.5em;
+    padding-top: 1em;
     position: relative;
 }
 
@@ -88,35 +107,60 @@
 
 .fullpage-slide.active {
     .fullpage-slide__card-animation {
-        animation-delay: 1s;
+        animation-name: slide1-cards-mobile;
+        animation-delay: 4.5s;
         animation-duration: 2s;
         animation-fill-mode: forwards;
-        animation-name: slide1-cards;
         opacity: 0;
+
+        @include breakpoint(lg) {
+            animation-name: slide1-cards-desktop;
+            animation-delay: 1s;
+            animation-duration: 2s;
+        }
     }
 
     .fullpage-slide__text-animation-container--1 {
         .fullpage-slide__text-animation-1 {
-            animation-name: slide1-text;
-            animation-duration: 1.25s;
-            animation-delay: 2.25s;
+            animation-name: slide1-text-mobile;
+            animation-duration: 4s;
+            animation-delay: 1s;
+
+            @include breakpoint(lg) {
+                animation-name: slide1-text-desktop;
+                animation-duration: 1.25s;
+                animation-delay: 2.55s;
+            }
         }
 
         .fullpage-slide__text-animation-2 {
-            animation-name: slide1-text;
-            animation-duration: 1.25s;
-            animation-delay: 3.5s;
+            animation-name: slide1-text-mobile;
+            animation-duration: 2.8s;
+            animation-delay: 1.5s;
             animation-fill-mode: forwards;
             margin-top: 12px;
-            // transform: translate(0%, 100%);
+            
+
+            @include breakpoint(lg) {
+                animation-name: slide1-text-desktop;
+                animation-duration: 2s;
+                animation-delay: 3.5s;
+                // transform: translate(0%, 100%);
+            }
         }
         .fullpage-slide__text-animation-3 {
-            animation-name: slide1-text;
-            animation-duration: 1.25s;
-            animation-delay: 4.75s;
+            animation-name: slide1-text-mobile;
+            animation-duration: 1.5s;
+            animation-delay: 2s;
             animation-fill-mode: forwards;
             margin-top: 12px;
             // transform: translate(0%,200%);
+
+            @include breakpoint(lg) {
+                animation-name: slide1-text-desktop;
+                animation-duration: 1.25s;
+                animation-delay: 4.75s;
+            }
         }
     }
 
@@ -128,21 +172,55 @@
         border: 0;
         opacity: 0;
         position: absolute;
-        right: 10%;
-        width: 30%;
         z-index: 10;
+        width: max-content;
+        padding: 8px;
+        height: 60px;
+        font-size: 24px;
+        left: 50%;
+        transform: translate(-50%, -5px);
+
+        @include breakpoint(md) {
+            height: calc(185px / 2.5);
+        }
+
+        @include breakpoint(lg) {
+            left: unset;
+            height: 72px;
+            font-size: 36px;
+            transform: unset;
+            right: 2.5%;
+            width: 45%;
+        }
+
+        @include breakpoint(xl) {
+            right: 5%;
+            width: 40%;
+        }
     }
 }
 
+@keyframes slide1-cards-mobile {
+    0%  {opacity: 0;}
+    25%  {opacity: 1;}
+    50%  {opacity: 1;}
+    100% {opacity: 1;}
+}
 
-@keyframes slide1-cards {
+@keyframes slide1-cards-desktop {
     0%  {opacity: 0;}
     25%  {opacity: 1;}
     50%  {opacity: 1; transform: translateX(0)}
     100% {opacity: 1; transform: translateX(-25%);}
 }
 
-@keyframes slide1-text {
+@keyframes slide1-text-mobile {
+    40%  {opacity: 1;}
+    75%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes slide1-text-desktop{
     40%  {opacity: 1;}
     60%  {opacity: 1;}
     100% {opacity: 1;}
@@ -210,14 +288,28 @@
     border: 0;
     bottom: calc(185px / 3.25);
     box-shadow: 0px 0px 2px 3px white;
-    font-size: 2.25em;
+    // font-size: 2.25em;
     font-family: 'Goldman', cursive;
     font-weight: bold;
-    height: calc(185px / 2.5);
     opacity: 0;
     position: absolute;
     transition: transform 250ms;
     z-index: 10;
+    font-size: 18px;
+    height: calc(185px / 3);
+
+    @include breakpoint(xs) {
+        font-size: 24px;
+    }
+
+    @include breakpoint(sm) {
+        font-size: 32px;
+        height: calc(185px / 2.5);
+    }
+
+    @include breakpoint(lg) {
+        font-size: 32px;
+    }
 }
 
 .fullpage-slide__cta-button--website-50 {
@@ -239,8 +331,18 @@
     animation-duration: 1.5s;
     animation-delay: 8.5s;
     animation-fill-mode: forwards;
-    width: 50%;
-    left: 25%;
+    width: 80%;
+    left: 10%;
+
+    @include breakpoint(sm) {
+        left: 17.5%;
+        width: 65%;
+    }
+
+    @include breakpoint(md) {
+        left: 25%;
+        width: 50%;
+    }
 }
 
 .fullpage-slide__text-animation-container {
@@ -248,8 +350,31 @@
 }
 
 .fullpage-slide__text-animation-container--1 {
-    margin-left: 50%;
-    padding: 0 4.5%;
+    padding: 6px;
+    font-size: 40px;
+
+    @include breakpoint(xs) {
+        font-size: 50px;
+    }
+
+    @include breakpoint(sm) {
+        margin-left: 16px;
+        font-size: 50px;
+    }
+
+    @include breakpoint(md) {
+        font-size: 64px;
+    }
+
+    @include breakpoint(lg) {
+        margin-left: 40%;
+        padding: 0 4.5%;
+        font-size: 60px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 88px;
+    }
 }
 
 .fullpage-slide__text-animation-container--2 {
@@ -258,8 +383,20 @@
     height: calc(100% - 185px);
     top: 0;
     left: 0;
-    font-size: 5em;
+    font-size: 24px;
     width: 100%;
+
+    @include breakpoint(xs) {
+        font-size: 32px;
+    }
+
+    @include breakpoint(sm) {
+        font-size: 36px;
+    }
+
+    @include breakpoint(md) {
+        font-size: 5em;
+    }
 }
 
 .fullpage-slide__badge-animation-container {
@@ -309,31 +446,70 @@
     background-color: white;
     width: 80%;
     margin: auto;
-    padding: 2em;
+    padding: 12px 8px 0 8px;
     border-radius: 35px;
     position: absolute;
     left: 50%;
     top: calc( ( 100% - 185px ) / 2 );
     transform: translate(-50%, -50%);
+
+    @include breakpoint(sm) {
+        padding: 2em;
+    }
 }
 
 .fullpage-slide__info-title {
     box-shadow: inset -16px -5px 0px $color_svb-green-darker;
-    font-size: 2em;
+    font-size: 18px;
     padding-bottom: .5em;
-    width: 90%;
+    padding-right: 16px;
+
+    @include breakpoint(sm) {
+        font-size: 24px;
+    }
+
+    @include breakpoint(md) {
+        font-size: 32px;
+        padding-right: 12px;
+        width: 90%;
+    }
 }
 
 .fullpage-slide__info-subtitle{
-    font-size: 1.5em;
-    margin-top: 2em;
+    font-size: 16px;
+    margin-top: 8px;
+
+    @include breakpoint(xs) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(sm) {
+        margin-top: 16px;
+    }
+
+    @include breakpoint(md) {
+        margin-top: 32px;
+        font-size: 24px;
+    }
 }
 
 .fullpage-slide__info-list {
     margin-left: 3em;
     margin-top: 1em;
     margin-bottom: 1em;
-    font-size: 1.25em;
+    font-size: 14px;
+
+    @include breakpoint(xs) {
+
+    }
+
+    @include breakpoint(sm) {
+        font-size: 16px;
+    }
+
+    @include breakpoint(md) {
+        font-size: 20px;
+    }
 }
 
 .fullpage-slide__info-listitem {

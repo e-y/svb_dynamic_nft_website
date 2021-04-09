@@ -4,7 +4,7 @@ import BlogPost from './blogPost'
 
 const Blog = () => {
     return (
-        <section className="blog-teaser" id="blog">
+        <section className="section blog-teaser" id="blog">
             <SectionTop title='Read More in our blog posts' badge={true} badge_title='NFT' />
             <div className="blog-teaser__posts">
                 <BlogPost

@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem 1rem;
+    margin-top: 3rem;
+
+    @include breakpoint(md) {
+        flex-direction: row;
+    }
+}
+
+.footer__main {
+    flex-grow: 1;
+    font-size: 1.5rem;
+}
+
+.footer__list {
+    display: flex;
+    margin-left: 0rem;
+    margin-top: .5rem;
+    flex-direction: column;
+
+    + &:first {
+        margin-top: 1rem;
+    }
+
+    @include breakpoint(md) {
+        margin-left: 3rem;
+        margin-top: 0;
+
+        &:first {
+            margin-top: 0;
+        }
+    }
+}
+
+.footer__list-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list-item {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__list-title {
+    font-size: larger;
+}

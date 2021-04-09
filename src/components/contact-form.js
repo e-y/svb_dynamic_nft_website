@@ -3,7 +3,7 @@ import SectionTop from '../components/section-top'
 
 const ContactForm = () => {
     return (
-        <section className="section contact-form">
+        <section className="section contact-form" id="contact">
             <SectionTop title='Contact Us' subtitle="Get in touch" badge={true} badge_title='NFT' />
             <ReactContactForm 
                 to="sander.denny@gmx.de" 
