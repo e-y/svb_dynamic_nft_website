@@ -636,7 +636,7 @@
         margin-top: 8px;
     }
 
-    @include breakpoint(lg) {
+    @include breakpoint(xxl) {
         margin-top: 0;
     }
 }
@@ -661,9 +661,14 @@
         padding-right: 12px;
         width: 90%;
     }
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+    }
+
     @include breakpoint(xl) {
         margin-top: 1em;
-        font-size: 34px;
+        font-size: 28px;
     }
 }
 
@@ -717,7 +722,12 @@
     }
 
     @include breakpoint(lg) {
-        font-size: 28px;
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 22px;
     }
 }
 
