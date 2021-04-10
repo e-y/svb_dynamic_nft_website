@@ -1,6 +1,7 @@
 import react from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Link } from "react-router-dom"
+import BadgeIcon from './badge-icon'
 
 const Footer = () => {
     const AnchorElement = <AnchorLink className="footer__list-item" href="blog">Things</AnchorLink>
@@ -8,7 +9,9 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="footer__main">
-                2022 Inofficial Suriname NFT
+                <p className="footer__headline">2022 Unofficial Suriname NFT</p>
+                <i className="footer__icon icon icon-svb-coat"></i>
+                {/* <BadgeIcon badge_icon={true} badge_title="NFT" /> */}
             </div>
             <div className="footer__list">
                 <p className="footer__list-title">Homepage</p>

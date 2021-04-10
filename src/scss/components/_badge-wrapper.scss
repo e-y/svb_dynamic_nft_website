@@ -16,3 +16,27 @@
     font-family: 'Big Shoulders Stencil Text';
     color: white;
 }
+
+.badge-wrapper__icon {
+    font-size: 45px;
+    z-index: 1;
+    line-height: 95px;
+    color: white;
+    text-shadow: 1px 1px 1px $color_pewter-blue, -1px -1px 1px $color_pewter-blue;
+
+    &.icon-question {
+        font-size: 45px;
+        z-index: 1;
+        line-height: 95px;
+        color: #11804d;
+        text-shadow: 1px 1px 1px #88a2aa, -1px -1px 1px #88a2aa;
+        background-color: white;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        text-align: center;
+        line-height: 50px;
+        position: absolute;
+        top: 25px;
+    }
+}

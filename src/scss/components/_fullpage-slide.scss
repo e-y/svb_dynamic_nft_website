@@ -50,11 +50,11 @@
 
     @include breakpoint(md) {
         max-height: 520px;
+        width: 25%;
     }
 
     @include breakpoint(lg) {
         max-height: unset;
-        width: 30%;
     }
 
     @include breakpoint(xl) {
@@ -91,8 +91,12 @@
     font-size: 6em;
     font-weight: bold;
     height: 100%;
-    padding-top: 1em;
+    padding-top: .75em;
     position: relative;
+
+    @include breakpoint(g) {
+        padding-top: 1em;
+    }
 }
 
 .fullpage-slide__text-animation {
@@ -352,6 +356,7 @@
 .fullpage-slide__text-animation-container--1 {
     padding: 6px;
     font-size: 40px;
+    padding-top: .5em;
 
     @include breakpoint(xs) {
         font-size: 50px;
@@ -359,21 +364,21 @@
 
     @include breakpoint(sm) {
         margin-left: 16px;
-        font-size: 50px;
+        font-size: 44px;
     }
 
     @include breakpoint(md) {
-        font-size: 64px;
+        font-size: 50px;
     }
 
     @include breakpoint(lg) {
         margin-left: 40%;
         padding: 0 4.5%;
-        font-size: 60px;
+        font-size: 56px;
     }
 
     @include breakpoint(xl) {
-        font-size: 88px;
+        font-size: 64px;
     }
 }
 
@@ -444,8 +449,9 @@
 
 .fullpage-slide__infos {
     background-color: white;
-    width: 80%;
+    width: 90%;
     margin: auto;
+    margin-top: 16px;
     padding: 12px 8px 0 8px;
     border-radius: 35px;
     position: absolute;
@@ -454,42 +460,59 @@
     transform: translate(-50%, -50%);
 
     @include breakpoint(sm) {
-        padding: 2em;
+        padding: 1em 1em 0;
+    }
+
+    @include breakpoint(md) {
+        min-height: 60%;
+        width: 80%;
+        margin-top: 8px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 0;
     }
 }
 
 .fullpage-slide__info-title {
-    box-shadow: inset -16px -5px 0px $color_svb-green-darker;
-    font-size: 18px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 4px 1px 1px $color_svb-green-darker;
+    font-size: 14px;
     padding-bottom: .5em;
     padding-right: 16px;
 
+    @include breakpoint(xs) {
+        font-size: 16px;
+    }
+
     @include breakpoint(sm) {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     @include breakpoint(md) {
-        font-size: 32px;
+        font-size: 22px;
         padding-right: 12px;
         width: 90%;
     }
 }
 
 .fullpage-slide__info-subtitle{
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 8px;
+    display: none;
 
     @include breakpoint(xs) {
-        font-size: 20px;
+        display: block;
+        font-size: 14px;
     }
 
     @include breakpoint(sm) {
+        font-size: 16px;
         margin-top: 16px;
     }
 
     @include breakpoint(md) {
-        margin-top: 32px;
-        font-size: 24px;
+        font-size: 18px;
     }
 }
 
@@ -505,10 +528,12 @@
 
     @include breakpoint(sm) {
         font-size: 16px;
+        margin-top: .5em;
+
     }
 
     @include breakpoint(md) {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 

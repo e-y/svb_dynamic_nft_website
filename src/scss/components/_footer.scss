@@ -12,6 +12,9 @@
 .footer__main {
     flex-grow: 1;
     font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer__list {
@@ -46,4 +49,8 @@
 
 .footer__list-title {
     font-size: larger;
+}
+
+.footer__icon {
+    font-size: 82px
 }

@@ -1,11 +1,10 @@
-import BlogModal from './blogModal';
 import SectionTop from '../section-top';
 import BlogPost from './blogPost'
 
 const Blog = () => {
     return (
         <section className="section blog-teaser" id="blog">
-            <SectionTop title='Read More in our blog posts' badge={true} badge_title='NFT' />
+            <SectionTop title='Read our Blog' subtitle='for further information' badge={true} badge_icon='icon-globe' />
             <div className="blog-teaser__posts">
                 <BlogPost
                     title='Soccer in Suriname'

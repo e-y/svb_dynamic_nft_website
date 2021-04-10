@@ -52,7 +52,7 @@ const MyModal = ( { title, subheadline, text, image }) => {
                     <div className="blog-post__title">{title}</div>
                     <div className="blog-post__subheadline">{subheadline}</div>
                     <div className="blog-post__text">{text}</div>
-                    <button className="blog-post__close" onClick={closeModal}>close</button>
+                    <button className="blog-post__close button button--green button--block" onClick={closeModal}>close</button>
                   </div>
                 </div>
               </div>

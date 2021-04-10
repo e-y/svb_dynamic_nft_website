@@ -39,7 +39,7 @@ const FaqAccordion = () => {
 
     return (
         <section className="section faq" id="faq">
-            <SectionTop title='FAQ' subtitle='Frequently Asked' badge={true} badge_title='NFT' />
+            <SectionTop title='FAQ' subtitle='Frequently Asked' badge={true} badge_icon='icon-question' />
             <Faq data={data} styles={styles}/>
         </section>
     )
