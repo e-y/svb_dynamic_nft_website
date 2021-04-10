@@ -12,7 +12,7 @@ const team = () => {
             <SectionTop title='Crew' subtitle='happily coding the future' badge={true} badge_icon='icon-soccer-ball' />
             <Parallax className="team__parallax" bgImage={image1} strength={500}>
                 <div className="team__members">
-                    <TeamMember name="Eric Young" position="Project Lead /Backend" initials="EY" country="USA" />
+                    <TeamMember name="Erik Young" position="Project Lead /Backend" initials="EY" country="USA" />
                     <TeamMember name="Rouark Leerdam" position="Pitch /Info /Roadmap" initials="RL" country="NED"/>
                     <TeamMember name="Denny Sander" position="Frontend /Bridge"  initials="DS" country="GER" />
                     {/* <TeamMember name="Kermit" position="Doin Lawn" image={`${process.env.PUBLIC_URL}/img/220px-Kermit_the_Frog.jpg`}/> */}
