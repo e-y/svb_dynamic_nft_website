@@ -54,8 +54,8 @@ const Homepage = () => {
                             <div className="section fullpage__slide">
                                 <div className="section fullpage-slide--second" style={{ backgroundImage: "url(/img/knitted-paper.png)" }}>
                                     <img src={`${process.env.PUBLIC_URL}/img/`} className="fullpage-slide__background" alt="surinami-logo"></img>
-                                    <img src={`${process.env.PUBLIC_URL}/img/587px-Suriname_relief_location_map.jpg`} className="image__world-map" alt="surinami-map"></img>
-                                    <img src={`${process.env.PUBLIC_URL}/img/soccer-ball.png`} className="image__soccer-ball" alt="soccer-ball"></img>
+                                    <img src={`${process.env.PUBLIC_URL}/img/587px-Suriname_relief_location_map.jpg`} className="fullpage-slide__background-image fullpage-slide__background-image--world-map" alt="surinami-map"></img>
+                                    <img src={`${process.env.PUBLIC_URL}/img/soccer-ball.png`} className="fullpage-slide__background-image fullpage-slide__background-image--soccer-ball" alt="soccer-ball"></img>
 
                                     <div className="fullpage-slide__text-animation-container fullpage-slide__text-animation-container--2">
                                         <p className="fullpage-slide__text-animation fullpage-slide__text-animation-4">unique and rare content</p>
@@ -65,25 +65,75 @@ const Homepage = () => {
                                     </div>
 
                                     <div className="fullpage-slide__badge-animation-container fullpage-slide__badge-animation-container--2">
-                                        <div className="fullpage-slide__badge-animation fullpage-slide__badge-animation fullpage-slide__badge-animation-1">
+                                        <div className="fullpage-slide__badge-animation fullpage-slide__badge-animation-1">
                                             <img src={`${process.env.PUBLIC_URL}/img/badge.svg`} className="icon__badge" alt="badge"></img>
                                             <i className="icon icon-mobile"></i>
-                                            <p className="fullpage-slide__badge-animation-text">limited</p>
+                                            <div className="fullpage-slide__badge-animation-text-container">
+                                                <p className="fullpage-slide__badge-animation-text">limited</p>
+                                                <p className="fullpage-slide__badge-animation-text-info">limited</p>
+                                            </div>
                                         </div>
-                                        <div className="fullpage-slide__badge-animation fullpage-slide__badge-animation fullpage-slide__badge-animation-2">
+                                        <div className="fullpage-slide__badge-animation fullpage-slide__badge-animation-2">
                                             <img src={`${process.env.PUBLIC_URL}/img/badge.svg`} className="icon__badge" alt="badge"></img>
                                             <i className="icon icon-mobile"></i>
-                                            <p className="fullpage-slide__badge-animation-text">ownership</p>
+                                            <div className="fullpage-slide__badge-animation-text-container">
+                                                <p className="fullpage-slide__badge-animation-text">ownership</p>
+                                                <p className="fullpage-slide__badge-animation-text-info">limited</p>
+                                            </div>
                                         </div>
-                                        <div className="fullpage-slide__badge-animation fullpage-slide__badge-animation fullpage-slide__badge-animation-3">
+                                        <div className="fullpage-slide__badge-animation fullpage-slide__badge-animation-3">
                                             <img src={`${process.env.PUBLIC_URL}/img/badge.svg`} className="icon__badge" alt="badge"></img>
                                             <i className="icon icon-mobile"></i>
-                                            <p className="fullpage-slide__badge-animation-text">dynamic data</p>
+                                            <div className="fullpage-slide__badge-animation-text-container">
+                                                <p className="fullpage-slide__badge-animation-text">dynamic data</p>
+                                                <p className="fullpage-slide__badge-animation-text-info">limited</p>
+                                            </div>
                                         </div>
-                                        <div className="fullpage-slide__badge-animation fullpage-slide__badge-animation fullpage-slide__badge-animation-4">
+                                        <div className="fullpage-slide__badge-animation fullpage-slide__badge-animation-4">
                                             <img src={`${process.env.PUBLIC_URL}/img/badge.svg`} className="icon__badge" alt="badge"></img>
                                             <i className="icon icon-mobile"></i>
-                                            <p className="fullpage-slide__badge-animation-text">variety</p>
+                                            <div className="fullpage-slide__badge-animation-text-container">
+                                                <p className="fullpage-slide__badge-animation-text">variety</p>
+                                                <p className="fullpage-slide__badge-animation-text-info">limited</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="fullpage-slide__more-infos-animation-container">
+                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-1">
+                                            <p className="fullpage-slide__more-infos-title">Title 1</p>
+                                            <ul className="fullpage-slide__more-infos-list">
+                                                <li className="fullpage-slide__more-infos-list-item">First</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Second</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Third</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Fourth</li>
+                                            </ul>
+                                        </div>
+                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-2">
+                                            <p className="fullpage-slide__more-infos-title">Title 2</p>
+                                            <ul className="fullpage-slide__more-infos-list">
+                                                <li className="fullpage-slide__more-infos-list-item">First</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Second</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Third</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Fourth</li>
+                                            </ul>
+                                        </div>
+                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-3">
+                                            <p className="fullpage-slide__more-infos-title">Title 3</p>
+                                            <ul className="fullpage-slide__more-infos-list">
+                                                <li className="fullpage-slide__more-infos-list-item">First</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Second</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Third</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Fourth</li>
+                                            </ul>
+                                        </div>
+                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-4">
+                                            <p className="fullpage-slide__more-infos-title">Title 4</p>
+                                            <ul className="fullpage-slide__more-infos-list">
+                                                <li className="fullpage-slide__more-infos-list-item">First</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Second</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Third</li>
+                                                <li className="fullpage-slide__more-infos-list-item">Fourth</li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <Link to="/info">

@@ -32,6 +32,26 @@
     z-index: -1;
 }
 
+.fullpage-slide__background-image {
+    z-index: 1;
+    width: 36%;
+    opacity: .25;
+    border-radius: 100%;
+    filter: grayscale(.5);
+    height: auto;
+}
+
+.fullpage-slide__background-image--soccer-ball {
+    transform: translate(-17.5%, 40%);
+    position: absolute;
+    right: -15%;
+}
+
+.fullpage-slide__background-image--world-map {
+    transform: translate(-17.5%, 40%);
+    left: -15%;
+}
+
 .fullpage-slide__card-presentation {
     display: flex;
     justify-content: center;
@@ -105,6 +125,7 @@
     background-color: white;
     padding: 8px;
     width: max-content;
+    font-family: 'Big Shoulders Stencil Text', cursive;
 }
 
 // animations triggered on active class:
@@ -271,6 +292,13 @@
             animation-delay: 7.5s;
             animation-fill-mode: forwards;
         }
+
+        .fullpage-slide__more-infos-animation-container {
+            animation-name: slide2-badge;
+            animation-duration: 1.5s;
+            animation-delay: 9.5s;
+            animation-fill-mode: forwards;
+        }
     }
 }
 
@@ -333,7 +361,7 @@
 .fullpage-slide__cta-button--website {
     animation-name: slide-cta;
     animation-duration: 1.5s;
-    animation-delay: 8.5s;
+    animation-delay: 10.5s;
     animation-fill-mode: forwards;
     width: 80%;
     left: 10%;
@@ -355,30 +383,30 @@
 
 .fullpage-slide__text-animation-container--1 {
     padding: 6px;
-    font-size: 40px;
+    font-size: 56px;
     padding-top: .5em;
 
     @include breakpoint(xs) {
-        font-size: 50px;
+        font-size: 84px;
     }
 
     @include breakpoint(sm) {
         margin-left: 16px;
-        font-size: 44px;
+        font-size: 124px;
     }
 
     @include breakpoint(md) {
-        font-size: 50px;
+        font-size: 84px;
     }
 
     @include breakpoint(lg) {
         margin-left: 40%;
+        font-size: 104px;
         padding: 0 4.5%;
-        font-size: 56px;
     }
 
     @include breakpoint(xl) {
-        font-size: 64px;
+        font-size: 114px;
     }
 }
 
@@ -388,58 +416,197 @@
     height: calc(100% - 185px);
     top: 0;
     left: 0;
-    font-size: 24px;
+    font-size: 44px;
     width: 100%;
 
     @include breakpoint(xs) {
-        font-size: 32px;
+        font-size: 64px;
     }
 
     @include breakpoint(sm) {
-        font-size: 36px;
+        margin-left: 16px;
+        font-size: 74px;
     }
 
     @include breakpoint(md) {
-        font-size: 5em;
+        font-size: 84px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 104px;
+        padding: 0 4.5%;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 114px;
     }
 }
 
 .fullpage-slide__badge-animation-container {
     background-color: rgba(255, 255, 255, 0.5);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     opacity: 0;
-    padding: 0 3em;
     position: absolute;
-    top: calc( ( 100% - 185px ) / 4);
-    transform: translateY(-50%);
+    top: 0;
     width: 100%;
+
+    @include breakpoint(md) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @include breakpoint(lg) {
+        flex-wrap: nowrap;
+        top: calc( ( 100% - 185px ) / 4);
+        transform: translateY(-50%);
+    }
+}
+
+.fullpage-slide__badge-animation-text-container {
+    position: absolute;
+    color: #11804d;
+    text-align: center;
+    padding: .125em;
+    top: 31px;
+    left: 100px;
+
+    @include breakpoint(md) {
+        transform: translateX(-50%);
+        left: 50%;
+        top: 100%;
+    }
+    @include breakpoint(lg) {
+        transform: translateX(-50%);
+        left: 50%;
+
+    }
+
+    @include breakpoint(xl) {
+        transform: translate(-37.5%, -45px);
+        left: 50%;
+        top: 80px;
+        left: 165px;
+    }
+
+    @include breakpoint(xxl) {
+        top: 80px;
+        left: 215px;
+    }
+}
+
+.fullpage-slide__badge-animation-text, .fullpage-slide__badge-animation-text-info {
+    font-family: 'Goldman', cursive;
 }
 
 .fullpage-slide__badge-animation-text {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50px);
-    color: black;
-    font-size: 3.25em;
-    text-align: center;
-    text-shadow: -3px -3px 1px white;
-    background-color: white;
-    border: 4px solid $color_svb-red;
-    border-radius: 5px;
-    padding: .125em;
+    font-size: 2em;
+
+    @include breakpoint(xs) {
+        font-size: 2.75em;
+    }
+
+    @include breakpoint(md) {
+        font-size: 2.5em;
+    }
+
+    @include breakpoint(md) {
+        font-size: 2.25em;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 2.5em;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 1.85em;
+    }
+
+    @include breakpoint(xxl) {
+        font-size: 2.55em;
+    }
+
+}
+
+.fullpage-slide__badge-animation-text-info {
+    font-size: 1.25em;
 }
 
 .fullpage-slide__badge-animation {
     position: relative;
-    padding: 2em 0;
+    padding: 1em 0;
+    padding-left: 1em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: -4px -1px 1px #11804d, 1px -1px 1px #11804d47;
+    margin: 1em;
+    width: calc(100% - 2em);
+
+    @include breakpoint(md) {
+        text-align: center;
+        width: 45%;
+        margin-bottom: 5em;
+    }
+
+    @include breakpoint(lg) {
+        padding: 2em 0;
+    }
+
+    @include breakpoint(xl) {
+        text-align: left;
+        width: 25%;
+    }
+
+    .icon__badge {
+        width: 75px;
+
+        @include breakpoint(md) {
+            width: 150px;
+        }
+
+        @include breakpoint(lg) {
+            width: 100px;
+            margin-left: 10px;
+        }
+
+        @include breakpoint(xl) {
+            width: 70px;
+        }
+
+        @include breakpoint(xxl) {
+            width: 100px;
+        }
+        
+    }
 
     .icon {
-        font-size: 5em;
+        font-size: 2.5em;
+        transform: translate(calc( (100% - -18px) * -1), 50%);
         position: absolute;
         color: white;
-        left: 50%;
-        transform: translate(-50%, 50%);
+        
+
+        @include breakpoint(md) {
+            font-size: 5em;
+            transform: translate(calc( (100% - -35px) * -1), 50%);
+        }
+
+        @include breakpoint(lg) {
+            font-size: 3.25em;
+            position: absolute;
+            transform: translate(calc( (100% - -23.5px) * -1), 55%);
+        }
+
+        @include breakpoint(xl) {
+            font-size: 2.8em;
+            transform: translate(calc( (100% - -12.5px) * -1), 38%);
+        }
+
+        @include breakpoint(xxl) {
+            font-size: 3.5em;
+            transform: translate(calc( (100% - -20.5px) * -1), 46%);
+        }
     }
 }
 
@@ -482,17 +649,21 @@
     padding-right: 16px;
 
     @include breakpoint(xs) {
-        font-size: 16px;
-    }
-
-    @include breakpoint(sm) {
         font-size: 18px;
     }
 
+    @include breakpoint(sm) {
+        font-size: 24px;
+    }
+
     @include breakpoint(md) {
-        font-size: 22px;
+        font-size: 28px;
         padding-right: 12px;
         width: 90%;
+    }
+    @include breakpoint(xl) {
+        margin-top: 1em;
+        font-size: 34px;
     }
 }
 
@@ -514,6 +685,14 @@
     @include breakpoint(md) {
         font-size: 18px;
     }
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 24px;
+    }
 }
 
 .fullpage-slide__info-list {
@@ -533,14 +712,81 @@
     }
 
     @include breakpoint(md) {
-        font-size: 18px;
+        margin-top: 1em;
+        font-size: 24px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 28px;
     }
 }
 
 .fullpage-slide__info-listitem {
-
+    list-style-type: square;
 }
 
 .fullpage-slide__info-listitem:first{
     margin-top: 1em;
+}
+
+.fullpage-slide__more-infos-animation-container {
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    height: calc( 70% - 146px );
+}
+
+.fullpage-slide__more-infos-animation {
+    display: none;
+    flex-grow: 1;
+    color: $color_svb-green-darker;
+    // padding: 18px 22.5px 32px 100px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 2px 1px 1px #11804d, -2px 0px 1px #11804d47;
+    width: 25%;
+    margin-bottom: 4em;
+    margin: 6em 1em 6em 1em;
+
+    @include breakpoint(lg) {
+        display: block;
+    }
+
+    @include breakpoint(xl) {
+        display: block;
+        margin: 2em 1em 6em 1em;
+    }
+}
+
+.fullpage-slide__more-infos-animation--1 {
+
+}
+.fullpage-slide__more-infos-animation--2 {
+
+}
+.fullpage-slide__more-infos-animation--3 {
+
+}
+.fullpage-slide__more-infos-animation--4 {
+
+}
+
+.fullpage-slide__more-infos-list {
+    margin-left: 44px;
+    margin-top: 10px;
+    list-style-type: square;
+    font-size: 24px;
+}
+
+.fullpage-slide__more-infos-list-item {
+    color: $color_svb-green-darker;
+    font-weight: 100;
+}
+
+.fullpage-slide__more-infos-title {
+    color: $color_svb-green-darker;
+    font-size: 34px;
+    margin-left: 10px;
 }
