@@ -40,6 +40,9 @@ const Homepage = () => {
                                                 <div className="flip-card-back">
                                                     <img src={`${process.env.PUBLIC_URL}/img/output_back-1.png`} className="fullpage-slide__card fullpage-slide__card--back" alt="player card back"></img>
                                                 </div>
+                                                <i className="flip-card__arrow flip-card__arrow--right icon-forward"></i>
+                                                <i className="flip-card__arrow flip-card__arrow--left icon-reply"></i>
+
                                             </div>
                                         </div>
                                         <div className="fullpage-slide__text-animation-container fullpage-slide__text-animation-container--1">

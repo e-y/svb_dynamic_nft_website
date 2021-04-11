@@ -42,3 +42,32 @@
     color: white;
     transform: rotateY(180deg);
 }
+
+.flip-card__arrow {
+  font-size: 1.3em;
+    position: absolute;
+    color: white;
+    left: 50%;
+    text-shadow: -5px 4px 8px black;
+    animation-name: slide1-arrows;
+    animation-duration: 2.5s;
+    animation-delay: 7.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.flip-card__arrow--right {
+  transform: translate(78%, 117px) rotate(-145deg);
+}
+
+.flip-card__arrow--left {
+  transform: translate(-178%, 117px) rotate(145deg);
+
+}
+
+@keyframes slide1-arrows {
+  0%  {opacity: 0;}
+  25%  {opacity: 1;}
+  50%  {opacity: 1;}
+  100% {opacity: 0;}
+}
