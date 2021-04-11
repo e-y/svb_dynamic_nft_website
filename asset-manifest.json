@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/svb_dynamic_nft_website/static/css/main.21b92714.chunk.css",
-    "main.js": "/svb_dynamic_nft_website/static/js/main.de947667.chunk.js",
-    "main.js.map": "/svb_dynamic_nft_website/static/js/main.de947667.chunk.js.map",
+    "main.css": "/svb_dynamic_nft_website/static/css/main.9f824081.chunk.css",
+    "main.js": "/svb_dynamic_nft_website/static/js/main.40a8464d.chunk.js",
+    "main.js.map": "/svb_dynamic_nft_website/static/js/main.40a8464d.chunk.js.map",
     "runtime-main.js": "/svb_dynamic_nft_website/static/js/runtime-main.eb4feef9.js",
     "runtime-main.js.map": "/svb_dynamic_nft_website/static/js/runtime-main.eb4feef9.js.map",
-    "static/js/2.6d586e26.chunk.js": "/svb_dynamic_nft_website/static/js/2.6d586e26.chunk.js",
-    "static/js/2.6d586e26.chunk.js.map": "/svb_dynamic_nft_website/static/js/2.6d586e26.chunk.js.map",
+    "static/js/2.77604360.chunk.js": "/svb_dynamic_nft_website/static/js/2.77604360.chunk.js",
+    "static/js/2.77604360.chunk.js.map": "/svb_dynamic_nft_website/static/js/2.77604360.chunk.js.map",
     "static/js/3.f5b085c3.chunk.js": "/svb_dynamic_nft_website/static/js/3.f5b085c3.chunk.js",
     "static/js/3.f5b085c3.chunk.js.map": "/svb_dynamic_nft_website/static/js/3.f5b085c3.chunk.js.map",
     "index.html": "/svb_dynamic_nft_website/index.html",
-    "static/css/main.21b92714.chunk.css.map": "/svb_dynamic_nft_website/static/css/main.21b92714.chunk.css.map",
-    "static/js/2.6d586e26.chunk.js.LICENSE.txt": "/svb_dynamic_nft_website/static/js/2.6d586e26.chunk.js.LICENSE.txt",
+    "static/css/main.9f824081.chunk.css.map": "/svb_dynamic_nft_website/static/css/main.9f824081.chunk.css.map",
+    "static/js/2.77604360.chunk.js.LICENSE.txt": "/svb_dynamic_nft_website/static/js/2.77604360.chunk.js.LICENSE.txt",
     "static/media/PIXNIO-1735948-5696x3797.48ecc6f5.jpg": "/svb_dynamic_nft_website/static/media/PIXNIO-1735948-5696x3797.48ecc6f5.jpg",
     "static/media/App.scss": "/svb_dynamic_nft_website/static/media/icomoon.e93dbe2e.svg",
     "static/media/pexels-photo-54567.472b2ec7.jpeg": "/svb_dynamic_nft_website/static/media/pexels-photo-54567.472b2ec7.jpeg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eb4feef9.js",
-    "static/js/2.6d586e26.chunk.js",
-    "static/css/main.21b92714.chunk.css",
-    "static/js/main.de947667.chunk.js"
+    "static/js/2.77604360.chunk.js",
+    "static/css/main.9f824081.chunk.css",
+    "static/js/main.40a8464d.chunk.js"
   ]
 }
