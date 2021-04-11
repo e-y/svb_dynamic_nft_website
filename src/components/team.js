@@ -3,14 +3,16 @@ import TeamMember from '../components/team-member'
 import Flag from '../components/flag'
 import { Parallax, Background } from 'react-parallax'
 import SectionTop from '../components/section-top';
+import backgroundImage1 from '../assets/images/photo-1459865264687-595d652de67e.jpg'
+import backgroundImage3 from '../assets/images/photo-1517747614396-d21a78b850e8.jpg'
+import backgroundImage5 from '../assets/images/photo-1507226353400-5ec8e43add88.jpg'
 
 const team = () => {
-    const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
 
     return (
         <section className="team" id="team">
             <SectionTop title='Crew' subtitle='happily coding the future' badge={true} badge_icon='icon-soccer-ball' />
-            <Parallax className="team__parallax" bgImage={image1} strength={500}>
+            <Parallax className="team__parallax" bgImage={backgroundImage1} className="image-grass-light" strength={500}>
                 <div className="team__members">
                     <TeamMember name="Erik Young" position="Project Lead /Backend" initials="EY" country="USA" />
                     <TeamMember name="Rouark Leerdam" position="Pitch /Info /Roadmap" initials="RL" country="NED"/>

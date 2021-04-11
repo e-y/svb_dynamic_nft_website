@@ -29,7 +29,7 @@ const Homepage = () => {
                                     <i className="fullpage-slide__coat fullpage-slide__coat--right icon icon-svb-coat"/>
                                     <img src={`${process.env.PUBLIC_URL}/img/flag-colors.png`} className="flag-image" alt="surinami flag"></img>
                                     <Flag />
-                                    <button className="fullpage-slide__cta-button fullpage-slide__cta-button--start">Go to the Marketplace</button>
+                                    <a href="https://testnets.opensea.io/accounts/0xa6fa6c959c826358f506cf67e3b0b64c10277276" className="fullpage-slide__cta-button fullpage-slide__cta-button--start">Go to the Marketplace</a>
                                     {/* <h1 className="fullpage-slide__title">unique Soccer cards</h1> */}
                                     <div className="fullpage-slide__card-animation-container">
                                         <div className="fullpage-slide__card-animation flip-card">
@@ -99,7 +99,7 @@ const Homepage = () => {
                                         </div>
                                     </div>
                                     <div className="fullpage-slide__more-infos-animation-container">
-                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-1">
+                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-1">
                                             <p className="fullpage-slide__more-infos-title">Title 1</p>
                                             <ul className="fullpage-slide__more-infos-list">
                                                 <li className="fullpage-slide__more-infos-list-item">First</li>
@@ -108,7 +108,7 @@ const Homepage = () => {
                                                 <li className="fullpage-slide__more-infos-list-item">Fourth</li>
                                             </ul>
                                         </div>
-                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-2">
+                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-2">
                                             <p className="fullpage-slide__more-infos-title">Title 2</p>
                                             <ul className="fullpage-slide__more-infos-list">
                                                 <li className="fullpage-slide__more-infos-list-item">First</li>
@@ -117,7 +117,7 @@ const Homepage = () => {
                                                 <li className="fullpage-slide__more-infos-list-item">Fourth</li>
                                             </ul>
                                         </div>
-                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-3">
+                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-3">
                                             <p className="fullpage-slide__more-infos-title">Title 3</p>
                                             <ul className="fullpage-slide__more-infos-list">
                                                 <li className="fullpage-slide__more-infos-list-item">First</li>
@@ -126,7 +126,7 @@ const Homepage = () => {
                                                 <li className="fullpage-slide__more-infos-list-item">Fourth</li>
                                             </ul>
                                         </div>
-                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-4">
+                                        <div className="fullpage-slide__more-infos-animation fullpage-slide__more-infos-animation-4">
                                             <p className="fullpage-slide__more-infos-title">Title 4</p>
                                             <ul className="fullpage-slide__more-infos-list">
                                                 <li className="fullpage-slide__more-infos-list-item">First</li>
@@ -165,9 +165,7 @@ const Homepage = () => {
                                     <Link to="/info">
                                         <button className="fullpage-slide__cta-button fullpage-slide__cta-button--website-50">Get more information</button>
                                     </Link>
-                                    <Link to="https://opensea.io/">
-                                        <button className="fullpage-slide__cta-button fullpage-slide__cta-button--marketplace-50">Go to the Marketplace</button>
-                                    </Link>
+                                    <a href="https://testnets.opensea.io/accounts/0xa6fa6c959c826358f506cf67e3b0b64c10277276" className="fullpage-slide__cta-button fullpage-slide__cta-button--marketplace-50">Go to the Marketplace</a>
                                 </div>
                             </div>
                             {/* <div className="section fullpage__slide">

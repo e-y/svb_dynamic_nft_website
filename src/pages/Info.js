@@ -1,5 +1,4 @@
 import Blog from '../components/blog/blog'
-import ImageGeneration from '../components/image-generation'
 import Intro from '../components/intro'
 import Navigation from '../components/navigation'
 import SpecialCard from '../components/specialCard'
@@ -13,9 +12,11 @@ import ContactForm from '../components/contact-form'
 import { Parallax, Background } from 'react-parallax'
 import Footer from '../components/footer'
 
+import backgroundImage2 from '../assets/images/PIXNIO-1735948-5696x3797.jpg'
+import backgroundImage4 from '../assets/images/pexels-photo-54567.jpeg'
+
 const info = () => {
-    // consconst t image1 = `${process.env.PUBLIC_URL}/img/pexels-photo-4785491.jpeg`,
-    const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
+    // const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
 
     const style = {
         position: 'absolute',
@@ -48,10 +49,10 @@ const info = () => {
             </i>
             <SpecialCard />
             <Navigation/> */}
-            <Parallax bgImage={image1} strength={500}>
+            <Parallax bgImage={backgroundImage4} className="header__animation" strength={500}>
                 <NikeCard />
                 <Typed
-                    className="header__animation"
+                    className="header__animation-typejs"
                     strings={[
                         'An example of NFT',
                         'An example of Collectible',
@@ -61,14 +62,13 @@ const info = () => {
                     backSpeed={50}
                     loop >
                 </Typed>
-                <span class="icon-globe"></span>
             </Parallax>
             
             <div className="container">
                 <Intro />
             </div>
 
-            <Parallax bgImage={image1}  strength={500} blur={{ min: -15, max: 15 }}>
+            <Parallax bgImage={backgroundImage2} className="image-grass" strength={500} blur={{ min: -15, max: 15 }}>
                 <div class="container">
                     <CardsFeature />
                 </div>

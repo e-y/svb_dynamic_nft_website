@@ -42,10 +42,20 @@
 }
 
 .header__animation {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.header__animation-typejs {
     color: $color_text;
     font-family: Overpass;
-    font-size: 1.8em;
+    font-size: 84px;
+    color: white;
     margin-top: 1.25em;
     white-space: nowrap;
     width: 25%;
+
+    span {
+        font-family: 'Big Shoulders Stencil Text', cursive;
+    }
 }

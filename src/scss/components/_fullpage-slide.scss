@@ -203,6 +203,8 @@
         height: 60px;
         font-size: 24px;
         left: 50%;
+        line-height: 52px;
+        text-align: center;
         transform: translate(-50%, -5px);
 
         @include breakpoint(md) {
@@ -356,6 +358,8 @@
     opacity: 1;
     right: 5%;
     width: 40%;
+    line-height: 52px;
+    text-align: center;
 }
 
 .fullpage-slide__cta-button--website {
@@ -461,6 +465,8 @@
         top: calc( ( 100% - 185px ) / 4);
         transform: translateY(-50%);
     }
+
+    @include breakpoint(xl) {}
 }
 
 .fullpage-slide__badge-animation-text-container {
@@ -549,6 +555,7 @@
     }
 
     @include breakpoint(lg) {
+        margin-bottom: 0;
         padding: 2em 0;
     }
 
@@ -745,6 +752,10 @@
     position: absolute;
     top: 30%;
     height: calc( 70% - 146px );
+
+    @include breakpoint(xl) {
+        margin-top: .5em;
+    }
 }
 
 .fullpage-slide__more-infos-animation {
@@ -756,16 +767,13 @@
     border-bottom-left-radius: 10px;
     box-shadow: 2px 1px 1px #11804d, -2px 0px 1px #11804d47;
     width: 25%;
+    overflow: hidden;
     margin-bottom: 4em;
     margin: 6em 1em 6em 1em;
 
-    @include breakpoint(lg) {
-        display: block;
-    }
-
     @include breakpoint(xl) {
         display: block;
-        margin: 2em 1em 6em 1em;
+        margin: 2em 1em 1em 1em;
     }
 }
 

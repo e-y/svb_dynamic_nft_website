@@ -5,3 +5,11 @@
 .image__soccer-ball {
 
 }
+
+.image-grass .react-parallax-bgimage {
+    filter: hue-rotate(44deg) grayscale(0.2) !important
+}
+
+.image-grass-light .react-parallax-bgimage {
+    filter: saturate(1) hue-rotate(65deg) grayscale(.6) !important;
+}
