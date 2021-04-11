@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/svb_dynamic_nft_website/static/css/main.9f824081.chunk.css",
-    "main.js": "/svb_dynamic_nft_website/static/js/main.40a8464d.chunk.js",
-    "main.js.map": "/svb_dynamic_nft_website/static/js/main.40a8464d.chunk.js.map",
+    "main.js": "/svb_dynamic_nft_website/static/js/main.30a2309b.chunk.js",
+    "main.js.map": "/svb_dynamic_nft_website/static/js/main.30a2309b.chunk.js.map",
     "runtime-main.js": "/svb_dynamic_nft_website/static/js/runtime-main.eb4feef9.js",
     "runtime-main.js.map": "/svb_dynamic_nft_website/static/js/runtime-main.eb4feef9.js.map",
     "static/js/2.77604360.chunk.js": "/svb_dynamic_nft_website/static/js/2.77604360.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.eb4feef9.js",
     "static/js/2.77604360.chunk.js",
     "static/css/main.9f824081.chunk.css",
-    "static/js/main.40a8464d.chunk.js"
+    "static/js/main.30a2309b.chunk.js"
   ]
 }
