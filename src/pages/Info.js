@@ -11,9 +11,9 @@ import { NikeCard } from "../components/nikeCard/index"
 import ContactForm from '../components/contact-form'
 import { Parallax, Background } from 'react-parallax'
 import Footer from '../components/footer'
-
 import backgroundImage2 from '../assets/images/PIXNIO-1735948-5696x3797.jpg'
 import backgroundImage4 from '../assets/images/pexels-photo-54567.jpeg'
+import CardLayout from '../components/cardLayout'
 
 const info = () => {
     // const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"
@@ -49,8 +49,10 @@ const info = () => {
             </i>
             <SpecialCard />
             <Navigation/> */}
+            
             <Parallax bgImage={backgroundImage4} className="header__animation" strength={500}>
-                <NikeCard />
+                <CardLayout />
+                {/* <NikeCard /> */}
                 <Typed
                     className="header__animation-typejs"
                     strings={[
